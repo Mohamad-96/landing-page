@@ -1,0 +1,335 @@
+
+/* Global rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary:  hsl(322, 100%, 66%);
+    --secandory1: hsl(193, 100%, 96%);
+    --secandory2: hsl(192, 100%, 9%);
+    --secandory3: hsl(208, 11%, 55%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+/* End Global rules */
+
+
+/* Start Header style */
+
+.nav .logo {
+    width: 130px;
+    height: 30px;
+}
+
+.nav a:hover {
+    background-color: var(--secandory2);
+    color: white;
+}
+
+
+/* Mobile Screen */
+
+@media (min-width:375px) {
+    header .big_Wrapper {
+        background-image: url(/huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #ecfaff;
+        width: 100%;
+        height: auto;
+        padding-left: 30px ;
+        padding-right: 30px;
+        overflow: hidden;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding-top: 50px;
+    }
+    
+
+    .nav a {
+        width: 150px ;
+        padding: 10px;
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.226) ;
+        color: var(--secandory2);
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .landing_Content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .landing_Content .left .big-title {
+        padding-top: 30px;
+        font-family: 'Poppins', sans-serif;
+        color: var(--secandory2);
+        font-weight: 400;
+        line-height: 1.6;
+    }
+
+    .landing_Content .left .text {
+        width: 90%;
+        font-family: 'Open Sans', sans-serif;
+        color: var(--secandory2);
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 20px auto;
+    }
+
+    .landing_Content .right .mock {
+        padding-top: 40px;
+    }
+    
+    .landing_Content .right img {
+        width: 500px;
+        height: 350px;
+    }
+
+    .landing_Content .left .btn-container {
+        display: inline-block;
+        padding: 16px 120px;
+        border-radius: 25px;
+        background-color: var(--primary);
+        margin-top: 20px;
+    }
+    
+    .landing_Content .left .btn-container a {
+        font-family: sans-serif;
+        color: white;
+    }
+
+}
+
+/* Desktop Screen */
+
+@media (min-width:1400px) {
+    header .big_Wrapper {
+        background-image: url(/huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg);
+        background-size: cover;
+        background-color: #ecfaff;
+        width: 100%;
+        height: 100vh;
+        padding-left: 30px ;
+        padding-right: 30px;
+    }
+
+    .nav {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nav a {
+        width: 200px ;
+        padding: 10px;
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.226) ;
+        color: var(--secandory2);
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .landing_Content {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        align-items: center;
+        justify-content: center;
+        padding-top: 60px;
+    }
+
+    .landing_Content .left {
+        text-align: left;
+    }
+
+    .landing_Content .left .big-title {
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        color: var(--secandory2);
+        font-weight: 600;
+        line-height: 1.6;
+    }
+
+    .landing_Content .left .text {
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        text-align: left;
+        color: var(--secandory2);
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 20px;
+    }
+
+    .landing_Content .right img {
+        width: 650px;
+        height: 450px;
+    }
+
+    .landing_Content .left .btn-container {
+        display: inline-block;
+        padding: 16px 75px;
+        border-radius: 25px;
+        background-color: var(--primary);
+        margin-top: 20px;
+    }
+    
+    .landing_Content .left .btn-container a {
+        font-family: sans-serif;
+        color: white;
+    }
+    
+    
+}
+
+
+
+/* End Header style */
+
+/* Start main content  */
+
+.cards_se {
+    margin: 65px 0;
+}
+
+.cards_se .container {
+    padding: 15px;
+}
+
+.cards_se .allCards {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Mobile Screen */
+
+@media (min-width:375px ) {
+    .cards_se .allCards .cardInfo {
+        background-color: white;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 25px;
+        box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.226) ;
+    }
+
+    .allCards .cardInfo .img_se {
+        margin: 50px 0;
+    }
+
+    .allCards .cardInfo h1 {
+        margin-bottom: 30px;
+    }
+
+    .allCards .cardInfo p {
+        width: 90%;
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(0 37 46 / 60%);
+        font-weight: 500;
+        line-height: 1.5;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .allCards .img_se img {
+        width: 300px;
+        height: 300px;
+    }
+    
+}
+
+
+/* Desktop Screen */
+
+@media (min-width:1400px ) {
+    .cards_se .allCards {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .cards_se .allCards .cardInfo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: white;
+        text-align: center;
+        border-radius: 25px;
+        box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.226) ;
+    }
+
+    .cards_se .allCards .cardInfo:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    .allCards .cardInfo .big-content {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        text-align: left;
+    }
+
+    
+    .allCards .cardInfo .img_se {
+        margin: 50px 0;
+    }
+
+    .allCards .cardInfo h1 {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .allCards .cardInfo p {
+        width: 70%;
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(0 37 46 / 60%);
+        font-weight: 500;
+        line-height: 1.5;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .allCards .img_se img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    
+}
+
+
