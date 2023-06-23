@@ -141,7 +141,7 @@ ul , ol {
 
 /* Desktop Screen */
 
-@media (min-width:1400px) {
+@media (min-width:1300px) {
     header .big_Wrapper {
         background-image: url(/huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg);
         background-size: cover;
@@ -290,7 +290,7 @@ ul , ol {
 
 /* Desktop Screen */
 
-@media (min-width:1400px ) {
+@media (min-width:1300px ) {
     .cards_se .allCards {
         width: 90%;
         margin: 150px auto;
@@ -489,7 +489,7 @@ footer .cardInfo .btn-container a {
 
 /************************** Desktop screen **************************/
 
-@media (min-width:1400px) {
+@media (min-width:1300px) {
     footer {
         width: 100%;
         min-height: 80vh;
