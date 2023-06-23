@@ -19,11 +19,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-
-
 a{
     text-decoration: none;
 }
+
+ul , ol {
+    list-style: none;
+}
+
+
+
 
 
 /* End Global rules */
@@ -235,6 +240,7 @@ a{
     gap: 50px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 200px;
 }
 
 
@@ -244,6 +250,7 @@ a{
     .cards_se .allCards .cardInfo {
         background-color: white;
         margin: 0 auto;
+        width: 100%;
         text-align: center;
         border-radius: 25px;
         box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.226) ;
@@ -280,12 +287,13 @@ a{
 @media (min-width:1400px ) {
     .cards_se .allCards {
         width: 90%;
-        margin: 0 auto;
+        margin: 150px auto;
     }
     .cards_se .allCards .cardInfo {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        width: 100%;
         background-color: white;
         text-align: center;
         border-radius: 25px;
@@ -331,5 +339,227 @@ a{
     
     
 }
+
+/************** Start footer **************/
+
+.container {
+    padding: 15px;
+}
+
+.footer-parent {
+    position: relative;
+}
+
+
+footer .cardInfo h2 {
+    margin-top: 20px;
+    width: 90%;
+}
+
+footer .cardInfo .btn-container {
+    display: inline-block;
+    padding: 16px 60px;
+    border-radius: 25px;
+    background-color: var(--primary);
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.226) ;
+
+}
+
+footer .cardInfo .btn-container a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.cotnent-footer .left-footer .logo path {
+    fill: white;
+}
+
+.cotnent-footer .left-footer .logo , .cotnent-footer .left-footer .locaion
+, .cotnent-footer .left-footer .phone , .cotnent-footer .left-footer .email {
+    margin-bottom: 30px;
+    line-height: 1.6;
+
+}
+
+
+.cotnent-footer .left-footer  .locaion , .cotnent-footer .left-footer  .phone
+,.cotnent-footer .left-footer  .email  {
+    position: relative;
+    padding-left: 40px;
+}
+
+.cotnent-footer .left-footer  .locaion i , .cotnent-footer .left-footer  .phone i
+,.cotnent-footer .left-footer  .email i {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+
+.cotnent-footer .right-footer .social i {
+    margin-left: 20px;
+    padding: 15px 18px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.cotnent-footer .right-footer p {
+    padding-top: 25px;
+    Letter-Spacing: 1.5px;
+}
+
+
+/*************************** Mobile screen ***************************/
+
+@media (min-width:375px) {
+    footer {
+        width: 100%;
+        height: 170vh;
+        margin-top: 50px;
+        background-color: var(--secandory2);
+    }
+
+    
+    footer .card-holder {
+        position: absolute;
+        top: -125px;
+        left: 50%;
+        width: 90%;
+        margin-left: -45% ;
+    }
+
+
+    footer .card-holder .cardInfo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: white;
+        text-align: center;
+        border-radius: 25px;
+        box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.226) ;
+        height: 250px;
+    }
+
+    .cotnent-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 140vh;
+        color: white;
+    }
+
+    .cotnent-footer .left-footer {
+        margin-top: 250px;
+        width: 90%;
+    }
+
+
+
+    .cotnent-footer .center-footer .nav-links .first li , 
+    .cotnent-footer .center-footer .nav-links .secand li {
+        padding: 12px 10px;
+    }
+
+    .cotnent-footer .right-footer  {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .cotnent-footer .right-footer p {
+        padding-top: 25px;
+        Letter-Spacing: 1.5px;
+    }
+    
+
+    .cotnent-footer .right-footer .social {
+        margin-bottom: 25px ;
+    }
+
+
+    
+}
+
+/************************** Desktop screen **************************/
+
+@media (min-width:1400px) {
+    footer {
+        width: 100%;
+        height: 80vh;
+        margin-top: 50px;
+        background-color: var(--secandory2);
+    }
+
+    footer .card-holder {
+        position: absolute;
+        top: -125px;
+        left: 50%;
+        width: 50%;
+        margin-left: -25% ;
+    }
+
+
+    footer .card-holder .cardInfo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: white;
+        text-align: center;
+        border-radius: 25px;
+        box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.226) ;
+        height: 250px;
+    }
+
+    .cotnent-footer {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 60vh;
+        color: white;
+    }
+
+    .cotnent-footer .left-footer {
+        margin-top: 250px;
+        width: 30%;
+    }
+
+    .cotnent-footer .right-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 70vh;
+    }
+
+    .cotnent-footer .right-footer .social {
+        margin-bottom: 25px ;
+        padding-top: 250px;
+    }
+
+
+    .cotnent-footer .center-footer .nav-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 150%;
+        margin-top: 120px;
+    }
+
+    .cotnent-footer .center-footer .nav-links li {
+        margin-bottom: 20px;
+    }
+    
+
+
+}
+
+
+
+
+
 
 
