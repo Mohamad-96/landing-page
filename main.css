@@ -1,4 +1,16 @@
 
+/* Start Varibles */
+
+:root {
+    --primary:  hsl(322, 100%, 66%);
+    --secandory1: hsl(193, 100%, 96%);
+    --secandory2: hsl(192, 100%, 9%);
+    --secandory3: hsl(208, 11%, 55%);
+}
+
+/* End Varibles */
+
+
 /* Global rules */
 
 * {
@@ -7,12 +19,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --primary:  hsl(322, 100%, 66%);
-    --secandory1: hsl(193, 100%, 96%);
-    --secandory2: hsl(192, 100%, 9%);
-    --secandory3: hsl(208, 11%, 55%);
-}
 
 body {
     font-size: 18px;
@@ -114,8 +120,8 @@ ul , ol {
     }
     
     .landing_Content .right img {
-        width: 500px;
-        height: 350px;
+        width: 350px;
+        height: 250px;
     }
 
     .landing_Content .left .btn-container {
@@ -340,7 +346,7 @@ ul , ol {
     
 }
 
-/************** Start footer **************/
+/************** ###### Start footer ###### **************/
 
 .container {
     padding: 15px;
@@ -414,9 +420,10 @@ footer .cardInfo .btn-container a {
 @media (min-width:375px) {
     footer {
         width: 100%;
-        height: 170vh;
+        min-height: 160vh;
         margin-top: 50px;
         background-color: var(--secandory2);
+        
     }
 
     
@@ -445,7 +452,7 @@ footer .cardInfo .btn-container a {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 140vh;
+        min-height: 140vh;
         color: white;
     }
 
@@ -485,7 +492,7 @@ footer .cardInfo .btn-container a {
 @media (min-width:1400px) {
     footer {
         width: 100%;
-        height: 80vh;
+        min-height: 80vh;
         margin-top: 50px;
         background-color: var(--secandory2);
     }
@@ -517,7 +524,7 @@ footer .cardInfo .btn-container a {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        height: 60vh;
+        min-height: 60vh;
         color: white;
     }
 
